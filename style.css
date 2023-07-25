@@ -7,7 +7,8 @@
     border: 0;
     box-sizing: border-box;
     outline: 0;
-    text-decoration: 0;
+    text-decoration: none;
+
 }
 
 :root {
@@ -19,17 +20,28 @@
 
     /* ==== Transition Variable ==== */
     --transition : all 300ms ease ; 
+
+
+    /* ==== asset ==== */
+    --bg-hero : "./gambar/hero_1.jpg"; 
 }
 
 
 body {
     font-family: 'Jost', sans-serif; 
+    overflow-x: hidden;
+    
+   
 }
 
 
 /* ===== Style Bagian Navbar === */
+
+
 header .navbarBox {
     background: var(--color-white);
+    width: 100%;
+    
 }
 
 .navbarBox .nav-item a.nav-link:hover {
@@ -60,3 +72,99 @@ header .navbarBox {
 
 
 
+/*===== Bagian Hero ====== */
+
+/* ===== Bagian style bg overlay===== */
+section.heroBg {
+    background-image: url("./gambar/hero_1.jpg");
+    height: 100vh;
+    width: 100vw;
+    min-height: 900px;
+    display: block;
+    position: relative;
+}
+
+section.heroBg::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* ==== Bagian Hero Content  ===== */
+
+/* ====== Bagian Pembungkus Hero Content ==== */
+.heroBg > .heroBox {
+    z-index: 2;
+    position: relative;
+    max-width: 1140px;
+    height: 80%;
+    margin: auto;
+}
+
+.heroBox > .heroContent {
+    height: 100vh;
+    min-height: 900px;
+
+}
+
+/* === Bagian Form ==== */
+.formHero > .btnHero {
+    padding: 0.5rem 2rem;
+}
+
+/* ===== Bagian Trending Keyword ==== */
+.row > .trendingBox > h3 {
+    font-size: 1.2em;
+}
+
+
+.row > .trendingBox ul li {
+   display: inline-block;
+}
+
+.row > .trendingBox > ul li a {
+    color: var(--color-white);
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+}
+
+/* ==== scroll ke bawah ===== */
+
+.heroBg > .scrollBtn {
+    z-index: 20;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    border-radius: 50%;
+    background: var(--color-primer);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroBg > .scrollBtn  i::before {
+    z-index: 30;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    
+    /* position: absolute; */
+    /* left: 10%;
+    top: 3%; */
+    
+
+}
