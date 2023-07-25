@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <nav class="navbarBox navbar navbar-expand-lg position-relative z-3">
+        <nav class="navbarBox navbar navbar-expand-lg z-3">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./gambar/logo_sabikerja.png" alt="">
@@ -63,8 +63,74 @@
             </div>
           </nav>
     </header>
-
+ 
     <!-- ============== Bagian Hero =================== -->
+    <!-- === Pembungkus Hero ===== -->
+    <section class="heroBg" >
+      <!-- ==== Pembungkus Hero Content === -->
+      <div class="heroBox">
+        <!-- ==== Heading 1 ==== -->
+        <div class="heroContent row d-flex justify-content-center align-items-center ">
+          <div class="col-md-12">
+            <!-- ==== Pembungkus Heading ==== -->
+            <div class="text-center mb-5">
+              <h1 class="text-white">There Are Hundreds Jobs Here Waiting For you!</h1>
+              <p class="text-white">Find Jobs, Employment & Career Opportunities</p>
+            </div>
+            <form action="#" method="post" class="formHero">
+              <div class="row mb-5">
+                <!-- Input Job, title, company -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <input type="text" class="form-control form-control-lg" placeholder="Job,Title,Company...">
+                </div>
+                <!-- Input Select Region  -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>Select Region..</option>
+                    <option value="Jawa Barat">Jawa Barat</option>
+                    <option value="Jawa Timur">Jawa Timur</option>
+                    <option value="Jawa Tengah">Jawa Tengah</option>
+                    <option value="DKI Jakarta">DKI Jakarta</option>
+                    <option value="Banten">Banten</option>
+                    <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                    <option value="Sumatera Utara">Sumatera Utara</option>
+                    <option value="Sumatera Selatan">Sumatera Selatan</option>
+                    <option value="Kalimantan Timur">Kalimantan Timur</option>
+                    <option value="Riau">Riau</option>
+                  </select>
+                </div>
+
+                <!-- Input Select Job Type -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <input list="jobType" name="jobType" class="form-control form-control-lg" placeholder="Job Type...">
+                      <datalist id="jobType">
+                        <option value="Part Time">
+                        <option value="Fulltime">
+                        <option value="Freelance">
+                        <option value="Contract">
+                      </datalist>
+                </div>
+
+                <!-- Tombol Submit -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <button type="submit" class="btn  btn-lg btn-danger text-white ">
+                    <span class="icon"></span>
+                  </button>
+                  
+                </div>
+                
+
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
     
     
     <!-- Option 1: Bootstrap Bundle with Popper -->
