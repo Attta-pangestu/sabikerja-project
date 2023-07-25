@@ -7,6 +7,9 @@
     <!-- Link CSS Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Link CDN Iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
     <!-- Link File Internal CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -77,6 +80,8 @@
               <h1 class="text-white">There Are Hundreds Jobs Here Waiting For you!</h1>
               <p class="text-white">Find Jobs, Employment & Career Opportunities</p>
             </div>
+
+            <!-- ==== Baris Form ===== -->
             <form action="#" method="post" class="formHero">
               <div class="row mb-5">
                 <!-- Input Job, title, company -->
@@ -113,8 +118,8 @@
 
                 <!-- Tombol Submit -->
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                  <button type="submit" class="btn  btn-lg btn-danger text-white ">
-                    <span class="icon"></span>
+                  <button type="submit" class="btnHero btn  btn-lg btn-danger text-white w-100 ">
+                    <i class="uil uil-search "></i> Search Job
                   </button>
                   
                 </div>
@@ -122,8 +127,19 @@
 
 
               </div>
-
             </form>
+            <!-- ==== Baris Trending Keyword ==== -->
+            <div class="row">
+              <div class="col-md-12 d-flex trendingBox">
+                <h3>Trending Job : </h3>
+                <ul class="keyword list-unstyled d-inline-block ">
+                  <li><a href="#">UI Designer</a></li>
+                  <li><a href="#">Frontend</a></li>
+                  <li><a href="#">Backend</a></li>
+                </ul>
+
+              </div>
+            </div>
           </div>
 
         </div>
