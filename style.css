@@ -201,26 +201,56 @@ section.heroBg::before{
 }
 
 
+/* === Bagian Heading Kategori Pekerjaan === */
+
+/* .kategoriBox > .headingBox::before {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    width: 3px;
+    background: var(--color-primer);
+} */
+
+
+.kategoriBox > .headingBox h3 {
+    margin-right: 1rem;
+     border-top: 3px solid var(--color-primer);
+    
+}
+
 /* ===== Bagian Kategori Pekerjaan ==== */
+
 .kategoriBox .jobBox {
-    background: red;
+    background: var(--color-white);
     border-radius: 1rem;
-    padding: 0.7rem 5rem 0.7rem 0.7rem;
+    padding: 0.7rem ;
     border:1px solid #202124 ;
     cursor: pointer;
     box-shadow: 0px 0px 3px 1px #202124;
     transition: var(--transition);
+    margin-bottom: 1rem;
     
 }
 
-.jobBox > .jobContent {
-   
+
+
+.jobBox > .jobContent > .iconBox ::before{
+    padding: 0.5rem;
+    font-size: 2.8rem;
+    border-radius: 10%;
+    background: #dca499;
+    color: var(--color-primer);
 }
 
-.jobBox > .jobContent > .iconBox {
-    
+/* ===== Efek Hover ===== */
+.kategoriBox .jobBox:hover  {
+    box-shadow: 0px 0px 3px 3px rgb(104, 102, 102);
 }
 
-.jobBox > .jobContent > .iconBox i {
-    font-size: 2rem;
+.jobBox:hover > .jobContent > .iconBox ::before {
+    background: #ef4928;
+    color: #fff;
 }
+
+
