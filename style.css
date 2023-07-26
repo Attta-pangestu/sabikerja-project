@@ -253,4 +253,30 @@ section.heroBg::before{
     color: #fff;
 }
 
+.batas {
+    border:1px solid #202124 ;
+    box-shadow: 0px 0px 3px 1px #202124;
+}
+
+/* =========================== Bagian Section List Job ============== */
+
+.listSect ul.listBox li.itemJob {
+    border-radius: 1rem;
+}
+
+ul.listBox li.itemJob .listLogo {
+    border-right: 1px solid #eee;
+    height: 6rem;
+    width: 25% ; 
+    display: flex;
+    align-items: center;
+}
+
+
+
+ul.listBox li.itemJob .listLogo img {
+    width:100% ;
+    height: auto;
+    vertical-align: middle;
+}
 
