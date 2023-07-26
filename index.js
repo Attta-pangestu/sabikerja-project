@@ -1,3 +1,3 @@
-import 'jquery';
-import 'popper.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import './node_modules/jquery';
+import './node_modules/popper.js';
+import './node_modules/bootstrap/dist/js/bootstrap.min.js';
