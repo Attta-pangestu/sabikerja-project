@@ -262,6 +262,28 @@ section.heroBg::before{
 
 .listSect ul.listBox li.itemJob {
     border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* ==== Efek Hover ===== */
+.listSect ul.listBox li.itemJob::before {
+    content: "";
+    position: absolute;
+    top: -10% ; 
+    height: 110%;
+    width: 0.8rem;
+    background: transparent;
+    transition: var(--transition);
+    
+    
+}
+
+.listSect ul.listBox li.itemJob:hover::before {
+    background: linear-gradient(90deg,rgba(239,73,40,1) 0%, transparent 97% );
 }
 
 ul.listBox li.itemJob .listLogo {
@@ -272,11 +294,51 @@ ul.listBox li.itemJob .listLogo {
     align-items: center;
 }
 
+.listLoc {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 570px) {
+    ul.listBox li.itemJob .listLogo {
+        width: 100% ; 
+    }
+    .listLoc {
+        width: 100%;
+    }
+}
+
 
 
 ul.listBox li.itemJob .listLogo img {
     width:100% ;
+    max-width: 200px;
     height: auto;
     vertical-align: middle;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
 }
 
+
+
+li.itemJob .listInfoBox .listType .badgeJob {
+    color: #fff;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem ;
+}
+
+/* ====== Jenis Badge Job ===== */
+
+.fullTime {
+    background: var(--color-primer);
+}
+
+.partTime {
+    background: rgb(55, 6, 190);
+}
+
+.contract {
+    background: orange;
+}
