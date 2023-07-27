@@ -375,7 +375,15 @@ li.itemJob .listInfoBox .listType .badgeJob {
   }
 
 
-  /* === Bagian Testimoni Kedua */
+/* ===== Bagian Box Testimoni */
+.cardBox {
+    background: url("./gambar/background.png");
+    border-radius: 2rem;
+}
+
+
+  /* === Bagian Isi Testimoni =====*/
+
   .card {
     box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
     transition: 0.8s;
@@ -383,7 +391,7 @@ li.itemJob .listInfoBox .listType .badgeJob {
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 7px !important;
+    border-radius: 4px !important;
 
 }
 
@@ -426,15 +434,6 @@ li.itemJob .listInfoBox .listType .badgeJob {
 
 }
 
-.card:hover h4   {
-    font-weight: 600;
-}
-.card:hover p  {
-    font-weight: 600;
-}
-.card:hover small   {
-    font-weight: 600;
-}
 
 .card:hover .layer {
     top: 0;
@@ -446,8 +445,7 @@ li.itemJob .listInfoBox .listType .badgeJob {
 }
 
 .card .content .img-1 {
-    width: 100px;
-    height: 100px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
@@ -487,3 +485,28 @@ hr {
     }
 
 }
+
+/* ==== Bagian Footer ==== */
+/* footer {
+     ;
+} */
+
+.cardCompany {
+    padding: 1rem;
+    border-radius: 0.8rem ;
+    border-radius: 1px solid gray;
+    background: white;
+    
+    
+}
+
+
+ /* ========================= Style Halaman About Us ==============  */
+
+ .aboutSect {
+    padding: 5em 0;
+ }
+
+
+
+
