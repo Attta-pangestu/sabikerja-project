@@ -507,6 +507,37 @@ hr {
     padding: 5em 0;
  }
 
+.orange {
+    color: #ef4928;
+}
 
 
+/* Bagian Why Us */
 
+.whyBox {
+    box-shadow: -4px 7px 21px -8px rgba(0,0,0,0.5);
+    border-radius: 2rem;
+}
+
+.whyBox  .iconBox  i::before {
+    font-size: 3.5rem;
+    
+}
+
+/* ===== Bagian Testimonial ===== */
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  
