@@ -85,12 +85,18 @@ header .navbarBox {
 /* ===== Bagian style bg overlay===== */
 section.heroBg {
     background-image: url("./gambar/hero_1.jpg");
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
-    min-height: 900px;
+    min-height: 700px;
     display: block;
     position: relative;
 }
+
+section.heroJob {
+    height: 30vh !important;
+    min-height: 300px !important;
+}
+
 
 section.heroBg::before{
     content: "";
@@ -115,8 +121,8 @@ section.heroBg::before{
 }
 
 .heroBox > .heroContent {
-    height: 100vh;
-    min-height: 900px;
+    height: 60vh;
+    min-height: 700px;
 
 }
 
@@ -153,7 +159,7 @@ section.heroBg::before{
 .heroBg > .scrollBtn {
     z-index: 20;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 45%;
     border-radius: 50%;
     background: var(--color-primer);
@@ -361,7 +367,13 @@ li.itemJob .listInfoBox .listType .badgeJob {
     padding: 0.4rem 1rem;
     border-radius: 20%;
     border: 2px solid var(--color-primer);
+    transition: var(--transition);
 
+}
+
+.paginationBox a:hover {
+    background: var(--color-primer);
+    color: white;
 }
 
 
